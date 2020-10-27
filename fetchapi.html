@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <title>Categorias</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-4">Categorias</h1>
+        <p class="lead">Cadastre, remova ou altere categorias.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <form id="formCategoria">
+          <input type="hidden" id="inputIdCategoria"/>
+          <div class="form-group">
+            <label for="inputTituloCategoria">Categoria:</label>
+            <input type="text" class="form-control" id="inputTituloCategoria" aria-describedby="inputTituloCategoria" placeholder="Terror, aventura...">
+          </div>
+          <button type="submit" class="btn btn-success" id="btnCadastrar">Cadastrar</button>
+      </form>
+
+      <div style="margin: auto;">
+        <table class="table table-bordered" style="margin-top: 40px;">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="corpoTabela"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
